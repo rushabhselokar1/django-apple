@@ -57,6 +57,10 @@ Resources:
             - UseSubnet
             - !Ref "SubnetId"
             - !Ref "AWS::NoValue"
+      BlockDeviceMappings:
+        - DeviceName: /dev/xvda
+          Ebs:
+            VolumeSize: 50       
       Tags:
         - Key: Environment
           Value: !Sub "${ProjectId}-WebApp${Stage}"
