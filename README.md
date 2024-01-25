@@ -18,12 +18,12 @@ This sample includes:
   the Python dependencies required for your Django application in different
   environments
 * requirements.txt - this file is used to install production Python dependencies
-* ec2django/ - this directory contains your Django project files. Note that this
+* blog/ - this directory contains your Django project files. Note that this
   directory contains a Django config file (settings.py) that includes a pre-defined
   SECRET_KEY. Before running in a production environment, you should replace this
   application key with one you generate
   (see https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/#secret-key for details)
-* helloworld/ - this directory contains your Django application files
+* web_application/ - this directory contains your Django application files
 * manage.py - this Python script is used to start your Django web application
 * scripts/ - this directory contains scripts used by AWS CodeDeploy when
   installing and deploying your application on the Amazon EC2 instance
@@ -74,7 +74,7 @@ What Do I Do Next?
 
 Once you have a virtual environment running, you can start making changes to
 the sample Django web application. We suggest making a small change to
-/helloworld/templates/index.html first, so you can see how changes pushed to
+/web_application/templates/index.html first, so you can see how changes pushed to
 your project's repository are automatically picked up by your project pipeline
 and deployed to the Amazon EC2 instance. (You can watch the pipeline progress on
 your project dashboard.) Once you've seen how that works, start developing your

@@ -1,10 +1,10 @@
 version: 0.0
 os: linux
 files:
- - source: /ec2django/
-   destination: /home/ec2-user/ec2django
- - source: /helloworld/
-   destination: /home/ec2-user/helloworld
+ - source: /blog/
+   destination: /home/ec2-user/blog
+ - source: /web_application/
+   destination: /home/ec2-user/web_application
  - source: /manage.py
    destination: /home/ec2-user
  - source: /supervisord.conf

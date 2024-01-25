@@ -22,8 +22,8 @@ phases:
       - sleep 5
 
       # Create a new PostgreSQL user and database for Django
-      - su postgres -c 'createuser ec2djangouser -s'
-      - su postgres -c 'createdb -O ec2djangouser ec2djangodb'
+      - su postgres -c 'createuser bloguser -s'
+      - su postgres -c 'createdb -O bloguser blogdb'
 
       # Install gcc
       - yum install -y gcc-7.3.1
@@ -48,8 +48,8 @@ phases:
 artifacts:
   files:
     - 'template.yml'
-    - 'ec2django/**/*'
-    - 'helloworld/**/*'
+    - 'blog/**/*'
+    - 'web_application/**/*'
     - 'scripts/**/*'
     - 'appspec.yml'
     - 'manage.py'

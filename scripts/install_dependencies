@@ -18,8 +18,8 @@ su postgres -c 'pg_ctl -D /var/lib/pgsql/data -l /var/lib/pgsql/logs/pgsql.log s
 sleep 5
 
 # Create a new PostgreSQL user and database for Django
-su postgres -c 'createuser ec2djangouser -s'
-su postgres -c 'createdb -O ec2djangouser ec2djangodb'
+su postgres -c 'createuser bloguser -s'
+su postgres -c 'createdb -O bloguser blogdb'
 
 # Enable Python 3.8
 amazon-linux-extras enable python3.8
